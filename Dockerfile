@@ -1,7 +1,7 @@
 FROM python:3
 RUN apt-get update -y
-RUN pip install numpy \
-    apt-get install wget -y \
+RUN pip install numpy
+RUN apt-get install wget -y \
     apt-get install -y julia \
     apt-get install -y default-jdk \
     apt-get install -y scala
