@@ -21,9 +21,6 @@ func main() {
 		{-19.3},
 		{71.4},
 	}
-
-	// Ax := mat64.Matrix(A)
-	// norm := mat64.Norm(A, 2)
 	X0 := [][]float64{
 		{0., 0., 0.},
 	}
