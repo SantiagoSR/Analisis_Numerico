@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"math"
 	"time"
-	// "github.com/gonum/matrix/mat64"
 )
 
 func main() {

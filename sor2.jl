@@ -1,14 +1,40 @@
 using LinearAlgebra
+using CSV
+using DataFrames
 @time begin
+    
 
+df = CSV.read("test.csv", DataFrame)
+i = names(df)
+l = nrow(df)+1
+A = zeros(Float64, l, l)
+b = zeros(Float64, l, 1)
+for j in 1:l+1
+    if j == l+1
+        b[1,1] = parse(Float64,i[j])
+    else
+        A[1,j] = parse(Float64,i[j])
+    end
+end
+df1 = Matrix(df)
+
+for i in 1:l-1
+    for j in 1:l+1
+        if j == l+1
+            b[i+1,1] = df1[i,j]
+        else 
+            A[i+1,j] = df1[i,j]
+        end
+    end    
+end
 # Create symmetric, positive definite matrix
-A = [3 -0.1 -0.2;
-    0.1 7 -0.3;
-    0.3 -0.2 10]
+# A = [3 -0.1 -0.2;
+#     0.1 7 -0.3;
+#     0.3 -0.2 10]
 
-b = [7.85;
-    -19.3;
-    71.4]
+# b = [7.85;
+#     -19.3;
+#     71.4]
 
     
 X0 = zeros(size(A,1))   # initial guess

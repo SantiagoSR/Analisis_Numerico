@@ -75,7 +75,7 @@ object SOR {
         
         println("Respuesta X : ")
         for(i <- 0 to Xt.length-1){
-            print(Xt(i)(0) + " \n")
+            print("["+ Xt(i)(0) + " ]")
         }
     }
 
