@@ -1,0 +1,11 @@
+Guass/
+SOR$.class
+SOR.class
+SORpy.ipynb
+go.mod
+go.sum
+null/
+.ipynb_checkpoints/
+.metals/
+.venv/
+.vscode/
