@@ -7,7 +7,5 @@ RUN apt-get install -y default-jdk
 RUN apt-get install -y scala
 COPY . /Analisis_Numerico
 WORKDIR /Analisis_Numerico
-RUN python SOR.py
-RUN julia sor2.jl
-RUN scalac SOR.scala
-RUN scala SOR
+CMD ["script.py"]
+ENTRYPOINT ["python3"]
