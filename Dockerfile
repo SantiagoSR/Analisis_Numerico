@@ -1,3 +1,4 @@
+FROM ubuntu:latest
 RUN apt-get install -y python3
 RUN apt-get install -y python3-pip
 RUN pip install numpy
