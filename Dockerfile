@@ -2,7 +2,9 @@ FROM python:3.8
 RUN pip install numpy
 RUN apt-get install wget -y
 FROM openjdk:7
-RUN ahseeberger/scala-sbt
+RUN apt-get update && apt-get -y install
+FROM ahseeberger/scala-sbt
+RUN apt-get update && apt-get -y install
 FROM julia:latest
 RUN apt-get update && apt-get -y install
 RUN julia -e 'import Pkg; Pkg.update()' && \
