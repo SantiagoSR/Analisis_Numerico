@@ -16,5 +16,6 @@ RUN pip install numpy
 RUN apt-get install wget -y
 COPY . /Analisis_Numerico
 WORKDIR /Analisis_Numerico
+ENV PATH="/opt/gtk/bin:${PATH}"
 ENTRYPOINT ["python3"]
 CMD [ "python3", "script.py" ]
