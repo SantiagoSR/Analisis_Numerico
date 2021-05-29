@@ -13,4 +13,4 @@ RUN julia -e 'import Pkg; Pkg.update()' && \
 COPY . /Analisis_Numerico
 WORKDIR /Analisis_Numerico
 ENTRYPOINT ["python3"]
-CMD [ "python", "script.py" ]
+CMD [ "python3", "script.py" ]
