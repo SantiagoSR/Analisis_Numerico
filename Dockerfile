@@ -1,9 +1,4 @@
-FROM ubuntu:latest
-RUN apt-get update && \
-    apt-get install -y wget && \
-    rm -rf /var/lib/apt/list/*
-RUN apt-get install -y python3
-RUN apt-get install -y python3-pip
+FROM python:3.8
 RUN pip install numpy
 RUN apt-get install wget -y
 RUN apt-get install -y default-jdk
@@ -16,4 +11,4 @@ RUN julia -e 'import Pkg; Pkg.update()' && \
 COPY . /Analisis_Numerico
 WORKDIR /Analisis_Numerico
 ENTRYPOINT ["python3"]
-CMD ["script.py"]
+CMD [ "python", "script.py" ]
