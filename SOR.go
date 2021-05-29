@@ -72,8 +72,6 @@ func main() {
 		X = [][]float64{{0., 0., 0.}}
 	}
 
-	//revision, _ := multiply(A, X)
-
 	fmt.Println("Error:", errado, "--- Iteraciones hechas:", iteracion)
 	fmt.Println("")
 	fmt.Println("Respuesta X: ", X)
