@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:latest
 RUN apt-get update -y
 RUN pip install numpy
 RUN apt-get install wget -y
