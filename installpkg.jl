@@ -1,4 +1,4 @@
 using Pkg
 Pkg.update()
-Pkg.add(["CSV", "JSON"])
+Pkg.add(["CSV", "DataFrames"])
 using CSV, DataFrames

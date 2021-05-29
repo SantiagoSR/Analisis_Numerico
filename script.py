@@ -1,5 +1,5 @@
 import os 
-os.system('julia installpkg.jl')
+# os.system('julia installpkg.jl')
 os.system('python SOR.py')
 os.system('julia sor2.jl')
 os.system('scalac SOR.scala')
