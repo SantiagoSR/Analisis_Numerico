@@ -1,8 +1,7 @@
 FROM openjdk:7
-RUN apt-get install -y default-jdk
+RUN apt-get install -y 
 RUN apt-get install -y scala
 RUN apt-get update && apt-get -y install
-
 FROM julia:latest
 RUN apt-get install -y julia
 RUN apt-get update && apt-get -y install
