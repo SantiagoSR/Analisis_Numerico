@@ -3,10 +3,10 @@ RUN apt-get update -y
 RUN pip install numpy
 RUN apt-get install wget -y
 RUN apt-get install -y julia
-RUN julia install.jl
 RUN apt-get install -y default-jdk
 RUN apt-get install -y scala
 COPY . /Analisis_Numerico
 WORKDIR /Analisis_Numerico
+RUN julia install.jl
 CMD ["script.py"]
 ENTRYPOINT ["python3"]
