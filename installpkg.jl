@@ -1,3 +1,5 @@
 using Pkg
-Pkg.add(["CSV", "DataFrames"])
+pkg"add CSV"
+pkg"add DataFrames"
+pkg"precompile"
 using CSV, DataFrames
