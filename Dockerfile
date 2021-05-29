@@ -3,7 +3,7 @@ RUN pip install numpy
 RUN apt-get install wget -y
 FROM openjdk:7
 RUN apt-get update && apt-get -y install
-FROM ahseeberger/scala-sbt
+RUN apt-get install -y scala
 RUN apt-get update && apt-get -y install
 FROM julia:latest
 RUN apt-get update && apt-get -y install
