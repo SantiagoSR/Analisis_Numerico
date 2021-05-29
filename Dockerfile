@@ -11,5 +11,5 @@ RUN julia -e 'import Pkg; Pkg.update()' && \
     julia -e 'import Pkg; Pkg.add("DataFrames"); using DataFrames'
 COPY . /Analisis_Numerico
 WORKDIR /Analisis_Numerico
-CMD ["script.py"]
 ENTRYPOINT ["python3"]
+CMD ["script.py"]
