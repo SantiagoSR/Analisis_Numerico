@@ -1,5 +1,5 @@
-FROM python:latest
-RUN apt-get update -y
+RUN apt-get install -y python3
+RUN apt-get install -y python3-pip
 RUN pip install numpy
 RUN apt-get install wget -y
 RUN apt-get install -y default-jdk
