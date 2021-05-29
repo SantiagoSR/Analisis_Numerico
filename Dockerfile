@@ -1,4 +1,7 @@
 FROM ubuntu:latest
+RUN apt-get update && \
+    apt-get install -y wget && \
+    rm -rf /var/lib/apt/list/*
 RUN apt-get install -y python3
 RUN apt-get install -y python3-pip
 RUN pip install numpy
